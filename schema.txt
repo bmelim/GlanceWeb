@@ -1,0 +1,17 @@
+CREATE TABLE settings(
+   id INTEGER PRIMARY KEY AUTOINCREMENT ,
+   setting           TEXT    NOT NULL,
+   value             TEXT    NOT NULL
+);
+
+sqlite> .schema messages
+CREATE TABLE messages(
+   id INTEGER PRIMARY KEY AUTOINCREMENT ,
+   host TEXT    NOT NULL,
+   name TEXT    NOT NULL,
+   value TEXT    NULL,
+   description TEXT NULL,
+   display TEXT    NULL,
+   action TEXT    NULL
+);
+
