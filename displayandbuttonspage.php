@@ -43,7 +43,7 @@ function setswitchdata($dbvars, $xs, $label)
 {
         echo "Button " . $label;
 	echo "<br>";
-        echo "<input type='text' name='button" . $xs . "alias' placeholder='Button " . (((int)$xs)+1) . " text' style='height:20px;width:100px;font-size:11pt;' value = '";
+        echo "<input type='text' name='button" . $xs . "alias' placeholder='Button " . (((int)$xs)+1) . " text' style='width:100px;font-size:11pt;' value = '";
                                 echo $dbvars["button" . $xs . "alias"];
                                 echo "' />";
 

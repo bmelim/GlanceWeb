@@ -317,13 +317,13 @@ if(isset($_POST['temperaturescale'])){ //check if form was submitted
 
 		echo "Temperature Event Trigger Limits:<br>";
 		echo "Cold:";
-                echo "<input type='text' name='cold' size = '2' style='width:30px;font-size:11pt;' value = ";
+                echo "<input type='text' name='cold' size = '2' style='width:40px;font-size:11pt;' value = ";
 		echo $dbvars['cold'];
 		echo " />";
 
 		echo "&nbsp";
 		echo "Hot:";
-                echo "<input type='text' name='hot' size = '2' style='width:30px;font-size:11pt;' value = ";
+                echo "<input type='text' name='hot' size = '2' style='width:40px;font-size:11pt;' value = ";
 		echo $dbvars['hot'];
 		echo " />";
 		echo "<br>";
@@ -334,13 +334,13 @@ if(isset($_POST['temperaturescale'])){ //check if form was submitted
 
 		echo "Humidity Event Trigger Limits:<br>";
 		echo "Dry:";
-                echo "<input type='text' name='dry' size = '2' style='width:30px;font-size:11pt;' value = ";
+                echo "<input type='text' name='dry' size = '2' style='width:40px;font-size:11pt;' value = ";
 		echo $dbvars['dry'];
 		echo " />";
 
 		echo "&nbsp";
 		echo "Humid:";
-                echo "<input type='text' name='humid' size = '2' style='width:30px;font-size:11pt;' value = ";
+                echo "<input type='text' name='humid' size = '2' style='width:40px;font-size:11pt;' value = ";
 		echo $dbvars['humid'];
 		echo " />";
 		echo "<br>";
@@ -350,13 +350,13 @@ if(isset($_POST['temperaturescale'])){ //check if form was submitted
 
 		echo "Light Event Trigger Limits:<br>";
 		echo "Normal:";
-                echo "<input type='text' name='normallight' size = '2' style='width:30px;font-size:11pt;' value = ";
+                echo "<input type='text' name='normallight' size = '2' style='width:40px;font-size:11pt;' value = ";
 		echo $dbvars['dry'];
 		echo " />";
 
 		echo "&nbsp";
 		echo "Bright:";
-                echo "<input type='text' name='brightlight' size = '2' style='width:30px;font-size:11pt;' value = ";
+                echo "<input type='text' name='brightlight' size = '2' style='width:40px;font-size:11pt;' value = ";
 		echo $dbvars['humid'];
 		echo " />";
 		echo "<br><br>";
