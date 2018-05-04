@@ -263,7 +263,7 @@ if (!empty($_POST)) //check if form was submitted
 
 		echo $y . ":&nbsp";
 
-	        echo "<input type='text' name='event" . $x . "description' placeholder='Event " . $y . " text' size = '10' value = '";
+	        echo "<input type='text' name='event" . $x . "description' placeholder='Event " . $y . " text' size = '15' value = '";
                                 echo $dbvars["event" . $x . "description"];
                                 echo "' />";
 		echo "<br>";
@@ -273,7 +273,7 @@ if (!empty($_POST)) //check if form was submitted
 		echo "&nbsp";
 		echo "&nbsp";
 
-	        echo "<input type='text' name='event" . $x . "days' placeholder='Event " . $y . " days' size = '10' value = '";
+	        echo "<input type='text' name='event" . $x . "days' placeholder='Event " . $y . " days' size = '15' value = '";
                                 echo $dbvars["event" . $x . "days"];
                                 echo "' />";
 
