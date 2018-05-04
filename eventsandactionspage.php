@@ -312,6 +312,8 @@ echo "<br>";
 				echo "SELECTED";
 			echo ">Screen Single Touch</option>";
 
+			echo "<option value='' disabled='disabled'>─────────────────────────</option>";
+
 			echo "<option value='motion'";	
 			if ($dbvars["actions"] ==  "motion") 
 				echo "SELECTED";
@@ -332,22 +334,32 @@ echo "<br>";
 				echo "SELECTED";
 			echo ">Light</option>";
 
-			for ($x = 0; $x < 8; $x++) 
-			{
-				$y = $x + 1;
-				echo "<option value='button" . $x . "'";	
-				if ($dbvars["actions"] ==  "button" . $x) 
-					echo "SELECTED";
-				echo ">Button " . $y . " [" . $dbvars['button' . $x . 'alias'] . "] </option>";
-			}
+			echo "<option value='' disabled='disabled'>─────────────────────────</option>";
 
 			for ($x = 0; $x < 8; $x++) 
 			{
- 				$y = $x + 1;
-				echo "<option value='event" . $x . "'";	
-				if ($dbvars["actions"] ==  "event" . $x) 
-					echo "SELECTED";
-				echo ">Event " . $y . " [" . $dbvars['event' . $x . 'description'] . "] </option>";
+				if ($dbvars['button' . $x . 'alias'] != "") //only show the button as an option if it is configured
+				{
+					$y = $x + 1;
+					echo "<option value='button" . $x . "'";	
+					if ($dbvars["actions"] ==  "button" . $x) 
+						echo "SELECTED";
+					echo ">Button " . $y . " [" . $dbvars['button' . $x . 'alias'] . "] </option>";
+				}
+			}
+
+			echo "<option value='' disabled='disabled'>─────────────────────────</option>";
+
+			for ($x = 0; $x < 8; $x++) 
+			{
+				if ($dbvars['event' . $x . 'description'] != "") //only show the event as an option if it is configured
+				{
+					$y = $x + 1;
+					echo "<option value='event" . $x . "'";	
+					if ($dbvars["actions"] ==  "event" . $x) 
+						echo "SELECTED";
+					echo ">Event " . $y . " [" . $dbvars['event' . $x . 'description'] . "] </option>";
+				}
 			}
 
 
