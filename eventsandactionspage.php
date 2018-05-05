@@ -312,7 +312,7 @@ echo "<br>";
 				echo "SELECTED";
 			echo ">Screen Single Touch</option>";
 
-			echo "<option value='' disabled='disabled'>─────────────────────────</option>";
+			echo "<option value='' disabled='disabled'>───────────────</option>";
 
 			echo "<option value='motion'";	
 			if ($dbvars["actions"] ==  "motion") 
@@ -334,7 +334,7 @@ echo "<br>";
 				echo "SELECTED";
 			echo ">Light</option>";
 
-			echo "<option value='' disabled='disabled'>─────────────────────────</option>";
+			echo "<option value='' disabled='disabled'>───────────────</option>";
 
 			for ($x = 0; $x < 8; $x++) 
 			{
@@ -348,7 +348,7 @@ echo "<br>";
 				}
 			}
 
-			echo "<option value='' disabled='disabled'>─────────────────────────</option>";
+			echo "<option value='' disabled='disabled'>───────────────</option>";
 
 			for ($x = 0; $x < 8; $x++) 
 			{
@@ -390,7 +390,7 @@ echo "<br>";
                 echo "<br>";
                 echo "<br>";
 	
-		if ($actiontype == "togglebutton")
+		if ($actiontype == "togglebutton" or $dbvars["actions"] == "screensingletouch")
 		{
         	        echo "<b>Off Steps</b>";
                 	echo "<br>";
